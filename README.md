@@ -12,6 +12,6 @@
 ### Code examples
 
 ```Ruby
-def my_greta_method
+def my_great_method
   puts "here it is"
 end```
