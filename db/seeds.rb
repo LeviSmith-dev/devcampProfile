@@ -1,7 +1,16 @@
+3.times do |topic|
+  Topic.create!(
+  title:"Topic #{topic}"
+  )
+end
+puts "3 topics created"
+
 10.times do |blog|
   Blog.create!(
   title: "My Blog post #{blog}",
-  body: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum.")
+  body: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum.",
+  topic_id: Topic.last.id
+  )
 end
 
 p "10 blogs created"
@@ -12,13 +21,24 @@ p "10 blogs created"
 end
 
 p "5 skills created"
-9.times do |portfolio_item|
+8.times do |portfolio_item|
   Portfolio.create!(
     title: "portfolio title #{portfolio_item}",
-    subtitle: "My great service",
+    subtitle: "Ruby on Rails",
     body: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
     main_image: "http://placehold.it/600x400",
     thumb_image: "http://placehold.it/350x200"
   )
 end
-p "9 portfolio items created"
+p "8 portfolio items created"
+
+1.times do |portfolio_item|
+  Portfolio.create!(
+    title: "portfolio title #{portfolio_item}",
+    subtitle: "Angular",
+    body: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+    main_image: "http://placehold.it/600x400",
+    thumb_image: "http://placehold.it/350x200"
+  )
+end
+ puts "1 angular created"
