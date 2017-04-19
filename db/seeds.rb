@@ -17,8 +17,8 @@ p "5 skills created"
     title: "portfolio title #{portfolio_item}",
     subtitle: "My great service",
     body: "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
-    main_image: "http://placeholder.it/600x400",
-    main_image: "http://placeholder.it/350x150"
+    main_image: "http://placehold.it/600x400",
+    thumb_image: "http://placehold.it/350x200"
   )
 end
 p "9 portfolio items created"
